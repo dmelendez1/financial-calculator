@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+</head>
+<body>
+    <h1>Mortgage Calculator</h1>
+    <form id="mortgageForm">
+       <label for="Loan Amount">Loan Amount ($): </label>
+        <input type="number" id="loanAmount" required><br>
+
+        <label for="interestRate">Annual Interest Rate (%):</label>
+        <input type="number" id="interestRate" required><br>
+
+        <label for="loanTerm">Loan Term (years):</label>
+        <input type="number" id="loanTerm" required><br>
+
+        <button type="button" onclick="calculatorMortage()">Calculate</button>
+
+    </form>
+    
+<h2>Results</h2>
+<p>Monthly Payment: <span id="monthlyPayment"></span></p>
+<p>Total Interest Paid: <span id="toitalInterest"></span></p>
+
+</body>
+</html>
